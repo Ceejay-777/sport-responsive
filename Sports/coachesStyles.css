@@ -4,7 +4,8 @@
   box-sizing: border-box;
   font-family: "Figtree", sans-serif;
 }
-header {
+
+.hero {
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.699),
@@ -14,43 +15,59 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 580px;
+  padding: 20px 60px;
+  /* height: 580px; */
 }
+
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 30px;
   padding-top: 10px;
+  align-items: center;
 }
 
 .mainnav {
-  margin-top: 15px;
-  font-size: 18px;
+  /* margin-top: 15px; */
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  gap: 15px;
+  min-width: 480px;
 }
 
 .mainnav a {
-  padding-left: 10px;
   text-decoration: none;
   color: white;
-  font-family: "Figtree", sans-serif;
+  font-size: larger;
+  /* padding-left: 10px; */
+  /* font-family: "Figtree", sans-serif; */
 }
 
-nav a:hover {
+.mainnav a:hover {
   text-decoration: underline;
 }
 
-h1 {
-  color: white;
-  font-size: 40px;
+.logo {
+  display: flex;
+  font-size: 30px;
   font-family: "Inter", sans-serif;
+  align-items: center;
+  background-color: white;
+  border-radius: 80px;
+  padding: 0px 20px;
+  font-weight: 600;
+  /* color: white; */
 }
 
-h1:hover {
+.logo:hover {
   cursor: pointer;
 }
 
 .redX {
   color: red;
+  font-size: 3.5rem;
+  font-weight: 900;
 }
 
 .hamburger {
@@ -60,46 +77,60 @@ h1:hover {
   background-color: white;
   border-radius: 50%;
   box-sizing: content-box;
+  display: none;
 }
 
-.innerText {
+.hero-text {
   /* position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */
   text-align: center;
+  margin: 80px 0px;
 }
 
-.italics {
+.hero-text-head {
   color: white;
   font-size: 60px;
   font-weight: 900;
-
   font-family: "Inter", sans-serif;
   font-family: "Roboto", sans-serif;
 }
-#quote {
+
+.hero-quote-text {
+  padding-top: 10px;
   font-family: "Abel", sans-serif;
   font-size: 20px;
-  color: black;
+  /* color: black; */
   font-weight: 600;
-  padding-top: 10px;
   color: white;
   letter-spacing: 1px;
   opacity: 0.6;
+  width: 60%;
+  margin: 0px auto;
 }
-.innerText button {
+
+/* .quotes {
+  font-size: 5rem;
+  color: white;
+  max-height: 10px;
+} */
+
+.get-started {
   margin-top: 20px;
-  padding-top: 8px;
+  /* padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 20px; */
+  padding: 10px 20px;
   border: none;
   background-color: red;
   color: white;
-  font-family: "Figtree", sans-serif;
+  /* font-family: "Figtree", sans-serif; */
   font-size: 16px;
-  border-radius: 4px;
+  font-weight: 600;
+  border-radius: 6px;
+  margin-top: 40px;
 }
 .innerText button:hover {
   background-color: rgb(240, 16, 16);
@@ -203,4 +234,29 @@ footer hr {
 .footer-text {
   color: white;
   padding-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .mainnav {
+    display: none;
+  }
+
+  .hero {
+    padding: 20px 40px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero-text {
+    margin-bottom: 30px;
+  }
+
+  .hero-quote-text {
+    width: 90%;
+  }
+
+  .mainnav {
+  }
 }
