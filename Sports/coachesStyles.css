@@ -71,6 +71,8 @@ body {
   border-radius: 80px;
   padding: 0px 20px;
   font-weight: 600;
+  width: fit-content;
+  /* margin: 0px auto; */
   /* color: white; */
 }
 
@@ -252,6 +254,10 @@ footer {
 .links,
 .newsletter {
   margin: 30px auto;
+}
+
+.sportx .logo {
+  margin: 0px auto;
 }
 
 .social-nav {
