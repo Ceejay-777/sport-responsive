@@ -34,6 +34,7 @@
   font-size: larger;
   gap: 15px;
   min-width: 480px;
+  transition: transform ease-in-out 0.5s;
 }
 
 .mainnav a {
@@ -49,9 +50,8 @@
 }
 
 .cancle {
-  min-width: 3rem;
-  height: 3rem;
-  background-color: red;
+  min-width: 3.33rem;
+  height: 3.33rem;
   border-radius: 50%;
   box-sizing: content-box;
   margin-left: auto;
@@ -252,7 +252,7 @@ footer hr {
 }
 
 .mainnav-open {
-  transform: translateX(200px);
+  transform: translateX(-200px);
 }
 
 @media screen and (max-width: 768px) {
@@ -282,7 +282,7 @@ footer hr {
     position: fixed;
     background-color: rgba(255, 255, 255, 0.95);
     top: 0;
-    right: 0;
+    right: -200px;
     /* width: 40vw; */
     min-width: 200px;
     flex-direction: column;
@@ -295,5 +295,9 @@ footer hr {
     display: block;
     text-align: left;
     margin-right: auto;
+  }
+
+  .cancle {
+    display: block;
   }
 }
