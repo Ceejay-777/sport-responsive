@@ -19,11 +19,16 @@ fieldset {
   text-align: center;
 }
 
-.material-symbols-outlined {
+/* .material-symbols-outlined {
   color: white;
   background-color: rgb(24, 23, 23);
   padding: 6px;
   border-radius: 20px;
+} */
+
+.quotes {
+  width: 40px;
+  height: 40px;
 }
 
 .first {
@@ -124,21 +129,28 @@ figcaption {
 }
 
 .testimonials {
-  background-image: url("./asset/bgimgHero\\(2\).jpg");
+  background-image: url("./asset/bgimgHero2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding-top: 60px;
+  padding: 60px 0px;
   /* display: none; */
+}
+
+.test-head-text {
+  color: white;
 }
 
 .testimonial-row {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
   gap: 50px;
-  padding-top: 60px;
+  margin: 50px auto;
+  width: 90%;
 }
+
 .first1 {
   background-color: white;
   padding: 10px;
