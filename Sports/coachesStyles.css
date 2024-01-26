@@ -1,13 +1,11 @@
 main {
   background-color: beige;
-  /* height: 700px; */
 }
 
 section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* flex-direction: column; */
   gap: 20px;
   width: 90%;
   padding: 60px 0px;
@@ -28,7 +26,6 @@ section {
 .tips {
   margin-top: 20px;
   font-weight: 600;
-  /* padding-bottom: 5px; */
 }
 
 .coach-img {

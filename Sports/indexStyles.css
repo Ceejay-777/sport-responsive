@@ -3,7 +3,6 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-bottom: 30px;
-  /* display: none; */
 }
 
 .foreword {
@@ -15,31 +14,25 @@
 fieldset {
   padding: 15px;
   line-height: 20px;
-  margin: 40px 0px;
+  margin: 40px auto;
   text-align: center;
 }
-
-/* .material-symbols-outlined {
-  color: white;
-  background-color: rgb(24, 23, 23);
-  padding: 6px;
-  border-radius: 20px;
-} */
 
 .quotes {
   width: 40px;
   height: 40px;
 }
 
-.first {
+.features-head-text {
   padding-top: 10px;
   padding-bottom: 10px;
   color: red;
   font-weight: 800;
 }
 
-fieldset p {
+.features-sub-text {
   padding-bottom: 10px;
+  max-width: 360px;
 }
 
 .sportDisplay {
@@ -47,20 +40,11 @@ fieldset p {
   background-color: rgb(24, 23, 23);
   padding-top: 70px;
   padding-bottom: 60px;
-  /* display: none; */
 }
 
-.sportDisplay h3 {
+.sportDisplay-head-text {
   color: white;
   margin-bottom: 10px;
-}
-
-#bio {
-  padding-top: 30px;
-  padding-left: 60px;
-  line-height: 30px;
-  font-weight: 600;
-  color: white;
 }
 
 .founder {
@@ -77,6 +61,7 @@ iframe {
 .founder img {
   border-radius: 50%;
 }
+
 .coaches {
   text-align: center;
   font-family: "Figtree", sans-serif;
@@ -87,21 +72,24 @@ iframe {
 h3 {
   font-size: 30px;
 }
+
 .coaches hr {
   position: absolute;
   left: 10px;
   margin-top: 10px;
   width: 20px;
 }
+
 figcaption {
   padding-top: 15px;
   font-weight: 800;
 }
+
 .name {
   font-size: 12px;
 }
 
-.img {
+.images {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -111,10 +99,17 @@ figcaption {
   margin: 0px auto;
 }
 
-.img img {
+.coach-image {
   border-radius: 10px;
   box-shadow: 5px 5px 8px 2px grey;
+  width: 250px;
+  height: 250px;
 }
+
+.coach-info {
+  max-width: 320px;
+}
+
 .view {
   font-family: inherit;
   margin-top: 30px;
@@ -123,6 +118,7 @@ figcaption {
   color: white;
   padding: 5px 15px;
 }
+
 .view:hover {
   cursor: pointer;
   background-color: rgb(243, 11, 11);
@@ -135,14 +131,13 @@ figcaption {
   background-position: center;
   text-align: center;
   padding: 60px 0px;
-  /* display: none; */
 }
 
 .test-head-text {
   color: white;
 }
 
-.testimonial-row {
+.all-testimonials {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -151,62 +146,26 @@ figcaption {
   width: 90%;
 }
 
-.first1 {
+.testimonial {
   background-color: white;
-  padding: 10px;
-  height: 250px;
+  padding: 40px 20px;
   border-radius: 10px;
-}
-.first1:hover {
-  transform: scale(1.1);
-}
-.second1:hover {
-  transform: scale(1.1);
-}
-.third1:hover {
-  transform: scale(1.1);
-}
-.info-text {
-  padding-top: 20px;
-  color: rgb(24, 23, 23);
-}
-.first1 p {
-  color: rgb(24, 23, 23);
-  font-weight: 600;
-}
-.first1 img {
-  border-radius: 50%;
-  margin-top: 10px;
-}
-figcaption {
-  color: rgb(24, 23, 23);
 }
 
-.second1 {
-  background-color: white;
-  padding: 10px;
-  height: 250px;
-  border-radius: 10px;
+.testimonial:hover {
+  transform: scale(1.1);
 }
-.second1 p {
+
+.test-info {
+  margin-top: 20px;
   color: rgb(24, 23, 23);
+  max-width: 280px;
   font-weight: 600;
 }
-.second1 img {
+
+.test-image {
   border-radius: 50%;
   margin-top: 10px;
-}
-.third1 {
-  background-color: white;
-  padding: 10px;
-  height: 250px;
-  border-radius: 10px;
-}
-.third1 p {
-  color: rgb(24, 23, 23);
-  font-weight: 600;
-}
-.third1 img {
-  border-radius: 50%;
-  margin-top: 10px;
+  width: 50px;
+  height: 50px;
 }
